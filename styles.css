@@ -1,0 +1,597 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Navbar Container */
+.header {
+  background-color: #0967d2;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(135deg, #0e00d1, #550073);
+  color: #ffffff;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  padding-left: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-header {
+    height: 80px;
+  }
+}
+
+.website-logo {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .website-logo {
+    font-size: 30px;
+  }
+}
+/* Mobile Header */
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-logo-container {
+    display: none;
+  }
+}
+
+/* Mobile Menu */
+.nav-menu-mobile {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-menu-list-mobile {
+  list-style-type: none;
+  padding-top: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-item-mobile {
+  font-size: 20px;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.nav-menu-item-mobile:hover {
+  color: #ebdd63;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-mobile {
+    display: flex;
+    width: 100%;
+  }
+}
+.nav-mobile-btn {
+  font-size: 20px;
+}
+
+/* Dark theme styles */
+
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Desktop Menu */
+.navbar-large-container {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav-menu-item {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+.nav-menu-item:hover {
+  color: #ebdd63;
+  border-bottom: 2px solid #ebdd63;
+  text-decoration: none;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #f8f9fa;
+  width: 120px;
+  height: 40px;
+  padding-left: 4px;
+  padding-right: 4px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.theme-toggle-btn:hover {
+  color: #007bff;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .navbar-large-container {
+    display: flex;
+  }
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 120px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0e00d1, #550073);
+  padding: 50px 20px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero-content {
+  text-align: center;
+}
+
+@media screen and(min-width:768px) {
+  .hero-content {
+    align-self: left;
+  }
+}
+
+.hero-content-heading {
+  font-size: 2.5rem;
+  padding-bottom: 13px;
+  padding-top: 100px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.span-el {
+  color: orange;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .span-el {
+    font-size: 3rem;
+  }
+}
+.hero-content h3 {
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 7px;
+}
+
+.hero-content p {
+  text-align: left;
+  padding-left: 30px;
+}
+.cta-button {
+  background-color: orange;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.cta-button:hover {
+  background-color: #550073;
+}
+
+.hero-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero-img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    max-width: 95%;
+  }
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .hero-content-heading {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+}
+/* wcu section */
+.wcu-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.dark-theme .wcu-section {
+  background-color: #000;
+}
+
+.wcu-heading {
+  font-family: "Roboto";
+  font-size: 2rem;
+  color: #5e2dd4;
+  margin-bottom: 20px;
+}
+
+.dark-theme .wcu-heading {
+  color: #fff;
+}
+
+.wcu-description {
+  font-family: "Roboto";
+  color: #7b8794;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.dark-theme .wcu-description {
+  color: #e6dcdc;
+}
+
+.wcu-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.wcu-card-icon:hover {
+  transform: scale(1.3);
+}
+
+.wcu-card-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  color: #550073;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .wcu-card-item {
+  color: #000;
+}
+
+.wcu-card-item:hover {
+  border-color: #7b8794;
+}
+
+.dark-theme .wcu-card-item:hover {
+  border-color: yellow;
+}
+
+.wcu-card-title {
+  color: #5e2dd4;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 7px;
+}
+
+.dark-theme .wcu-card-title {
+  color: #000;
+}
+
+.wcu-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
+/* Grid adjustment for tablet and larger screens */
+@media (min-width: 576px) {
+  .wcu-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .wcu-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Benefits Section */
+.franchise-benefits {
+  max-width: 120%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem; /* Adjust padding as needed */
+  text-align: center;
+  background-color: #550073; /* Change to desired background color */
+  border-radius: 8px;
+  color: #fff;
+}
+
+.dark-theme .franchise-benefits {
+  background-color: #fff;
+}
+
+.franchise-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.dark-theme .franchise-benefits h2 {
+  color: #0e00d1;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.dark-theme .benefit-card {
+  background-color: #000;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.dark-theme .benefit-card i {
+  color: rgb(221, 208, 214);
+}
+
+.benefit-card h3 {
+  color: #191a52;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.dark-theme .benefit-card h3 {
+  color: #f9f9f9;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+.dark-theme .benefit-card p {
+  color: #9c9393;
+}
+
+/* from anywhere */
+
+.from-anywhere {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.from-anywhere h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.dark-theme .from-anywhere h2 {
+  color: #4a90e2;
+}
+.from-anywhere p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.dark-theme .from-anywhere p {
+  color: #666;
+}
+
+.logos-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-track {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+  border-radius: 20px;
+}
+
+.logo-item:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.explore-integrations-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.explore-integrations-btn:hover {
+  background-color: #0056b3;
+}
+
+.follow-us-section {
+  background: linear-gradient(135deg, #0e00d1, #550073);
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-website-logo {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.follow-us-section-heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.follow-icon-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .follow-us-icon-container {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+.icon {
+  color: #fff;
+  font-size: 35px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.icon:hover {
+  color: #5e2dd4;
+  transform: scale(1.1);
+  background-color: #e0e0e0;
+  border-radius: 30%;
+}
+
+.footer-section-mail-id {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer-section-address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.footer-section-address {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and(min-width:768px) {
+  .footer-section-address {
+    font-size: 30px;
+  }
+}
